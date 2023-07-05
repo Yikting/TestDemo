@@ -21,6 +21,7 @@
     "@babel/preset-env": "^7.22.5",
     "@babel/preset-react": "^7.22.5",
     "@babel/runtime": "^7.22.6",
+    "@faker-js/faker": "^8.0.2",
     "@types/jest": "^29.5.2",
     "@types/lodash": "^4.14.195",
     "@types/node": "^20.3.3",
@@ -59,6 +60,8 @@
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.22.6",
-    "core-js": "3"
+    "@types/react-lazy-load-image-component": "^1.5.3",
+    "core-js": "3",
+    "react-lazy-load-image-component": "^1.6.0"
   }
 }

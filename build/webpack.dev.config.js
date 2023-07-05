@@ -21,7 +21,8 @@ const devConfig = {
     compress: true, // 开启gzip压缩
     port: 8080, // 自定义端口号
     open: true, // 开启服务器时，自动打开页面
-    hot: true // 代码变化后，自动刷新页面 (该参数可以不用手动添加，它已经被自动应用于 HMR 插件。)
+    hot: true, // 代码变化后，自动刷新页面 (该参数可以不用手动添加，它已经被自动应用于 HMR 插件。)
+    historyApiFallback: true
   },
   // 插件
   plugins: [

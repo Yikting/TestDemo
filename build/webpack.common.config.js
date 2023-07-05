@@ -175,9 +175,11 @@ module.exports = {
 		alias: {
 			pages: path.join(__dirname, '../src/pages'),
 			components: path.join(__dirname, '../src/components'),
+			router: path.join(__dirname, '../src/router'),
+			images: path.join(__dirname, '../src/assets/images'),
 			actions: path.join(__dirname, '../src/redux/actions'),
 			reducers: path.join(__dirname, '../src/redux/reducers'),
-			images: path.join(__dirname, '../src/images'),
+			utils: path.join(__dirname, '../src/utils'),
 		},
 	},
 }
