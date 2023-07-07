@@ -99,6 +99,30 @@ module.exports = {
 				],
 				sideEffects: true,
 			},
+			{
+				test: /\.s[ac]ss$/i,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader,
+						options: {
+							publicPath: '../',
+						},
+					},
+					{
+						loader: 'css-loader',
+					},
+					{ loader: 'sass-loader' },
+					{
+						loader: 'postcss-loader',
+						options: {
+							postcssOptions: {
+								plugins: [require('autoprefixer')],
+							},
+						},
+					},
+				],
+				sideEffects: true,
+			},
 			/**
 			 * 配置图片静态资源的打包信息   webpack5 新增Asset Module, 替代了之前常用的 raw-loader、url-loader、file-loader
 			 * **当type设置为'asset'时，会通过如下策略打包
@@ -180,6 +204,7 @@ module.exports = {
 			actions: path.join(__dirname, '../src/redux/actions'),
 			reducers: path.join(__dirname, '../src/redux/reducers'),
 			utils: path.join(__dirname, '../src/utils'),
+			types: path.join(__dirname, '../src/types'),
 		},
 	},
 }
